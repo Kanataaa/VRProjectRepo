@@ -10,8 +10,23 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <a-scene>
+    <a-scene cursor="rayOrigin:mouse">
+        <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera>
+
+        <a-sky src="https://live.staticflickr.com/65535/51362069082_475ec8a432_k.jpg"></a-sky>
+
+        <a-entity position="1 1 -3">
+            <a-cylinder radius='.25' height=".6" color="orange" shadow change-color-onclick></a-cylinder>
+            <a-cylinder position="1 0 0" radius='.25' height=".6" color="orange" shadow change-color-onclick></a-cylinder>
+            <a-cylinder position="0 0 -1.1" radius='.25' height=".6" color="orange" shadow change-color-onclick></a-cylinder>
+            <a-cylinder position="1 0 -1.1" radius='.25' height=".6" color="orange" shadow change-color-onclick></a-cylinder>
+            <a-cylinder position=".5 -0.05 -.5" radius=".75" height=".5" color="orange" shadow change-color-onclick></a-cylinder>
+        </a-entity>
 
     </a-scene>
+
+
 </body>
 </html>
